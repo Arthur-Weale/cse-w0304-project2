@@ -17,7 +17,6 @@
         "tags": [
           "Books"
         ],
-        "summary": "Get all books",
         "description": "",
         "responses": {
           "200": {
@@ -32,52 +31,22 @@
         "tags": [
           "Books"
         ],
-        "summary": "Create a new book",
         "description": "",
         "parameters": [
           {
             "name": "body",
             "in": "body",
-            "description": "Book data",
-            "required": true,
             "schema": {
               "type": "object",
               "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "object"
+                "title": {
+                  "example": "any"
                 },
-                "properties": {
-                  "type": "object",
-                  "properties": {
-                    "title": {
-                      "type": "object",
-                      "properties": {
-                        "example": {
-                          "type": "string",
-                          "example": "any"
-                        }
-                      }
-                    },
-                    "authorId": {
-                      "type": "object",
-                      "properties": {
-                        "example": {
-                          "type": "string",
-                          "example": "any"
-                        }
-                      }
-                    },
-                    "isbn": {
-                      "type": "object",
-                      "properties": {
-                        "example": {
-                          "type": "string",
-                          "example": "any"
-                        }
-                      }
-                    }
-                  }
+                "authorId": {
+                  "example": "any"
+                },
+                "isbn": {
+                  "example": "any"
                 }
               }
             }
@@ -98,15 +67,13 @@
         "tags": [
           "Books"
         ],
-        "summary": "Get a book by ID",
         "description": "",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string",
-            "description": "Book ID"
+            "type": "string"
           }
         ],
         "responses": {
@@ -120,14 +87,11 @@
             "description": "Not Found"
           }
         }
-      }
-    },
-    "/api/books/{id}' */ /*\n\n #swagger.parameters[": {
+      },
       "put": {
         "tags": [
           "Books"
         ],
-        "summary": "Update a book",
         "description": "",
         "parameters": [
           {
@@ -139,46 +103,17 @@
           {
             "name": "body",
             "in": "body",
-            "description": "Book data to update",
-            "required": true,
             "schema": {
               "type": "object",
               "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "object"
+                "title": {
+                  "example": "any"
                 },
-                "properties": {
-                  "type": "object",
-                  "properties": {
-                    "title": {
-                      "type": "object",
-                      "properties": {
-                        "example": {
-                          "type": "string",
-                          "example": "any"
-                        }
-                      }
-                    },
-                    "authorId": {
-                      "type": "object",
-                      "properties": {
-                        "example": {
-                          "type": "string",
-                          "example": "any"
-                        }
-                      }
-                    },
-                    "isbn": {
-                      "type": "object",
-                      "properties": {
-                        "example": {
-                          "type": "string",
-                          "example": "any"
-                        }
-                      }
-                    }
-                  }
+                "authorId": {
+                  "example": "any"
+                },
+                "isbn": {
+                  "example": "any"
                 }
               }
             }
@@ -200,7 +135,6 @@
         "tags": [
           "Books"
         ],
-        "summary": "Delete a book",
         "description": "",
         "parameters": [
           {
