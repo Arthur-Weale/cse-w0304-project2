@@ -1,0 +1,61 @@
+POST  http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+  "title": "The hash browns",
+  "authorId": "6835fbc88330247643099ad8",
+  "genre": "thriller",
+  "publishedYear": "2030",
+  "pages": "610",
+  "language": "Spanish",
+  "isbn": "9780000000012",
+  "available": "true"
+}
+
+###
+
+GET  http://localhost:3000/api/books
+
+
+###
+
+GET   http://localhost:3000/api/books/6835f50ec0132b48c535f444
+
+
+###
+
+PUT   http://localhost:3000/api/books/6835fbdb8330247643099ada
+Content-Type: application/json
+
+{
+    "title": "Digital Rebirth",
+    "authorId": "6835fbc88330247643099ad8",
+    "genre": "Cyberpunk",
+    "publishedYear": 2022,
+    "pages": 300,
+    "language": "English",
+    "isbn": "9780000000006",
+    "available": false
+}
+
+###
+
+DELETE   http://localhost:3000/api/books/6835f54fc0132b48c535f447
+
+
+###
+#AUTHORS
+
+POST  http://localhost:3000/api/authors
+Content-Type: application/json
+
+{
+    "name": "Isaac Asimov",
+    "birthYear": 1920,
+    "nationality": "Russian-American",
+    "__v": 0
+  }
+
+###
+
+GET http://localhost:3000/api/authors
