@@ -2,14 +2,14 @@ POST  http://localhost:3000/api/books
 Content-Type: application/json
 
 {
-  "title": "The hash browns",
-  "authorId": "6835fbc88330247643099ad8",
-  "genre": "thriller",
-  "publishedYear": "2030",
-  "pages": "610",
-  "language": "Spanish",
-  "isbn": "9780000000012",
-  "available": "true"
+    "title": "How to practice law without going to law school 2",
+    "authorId": "683737abf336b181de8fe4f0",
+    "genre": "Educational",
+    "publishedYear": 2022,
+    "pages": 301,
+    "language": "English",
+    "isbn": "9780000000091",
+    "available": true
 }
 
 ###

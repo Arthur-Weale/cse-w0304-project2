@@ -5,8 +5,8 @@ const validate = require('../middleware/validate');
 
 // GET all books
 router.get('/', 
-  // #swagger.tags = ['Books']
-   // #swagger.path = '/api/books'
+  /* #swagger.tags = ['Books']
+  #swagger.path = '/api/books'*/
   controller.getAll
 );
 
@@ -19,22 +19,22 @@ router.get('/:id',
 
 // POST create a book
 router.post('/', 
-  // #swagger.tags = ['Books']
-  // #swagger.path = '/api/books'
+  /* #swagger.tags = ['Books']
+  #swagger.path = '/api/books'*/
   validate.book, 
   controller.create
 );
 
 // PUT update a book
 router.put('/:id', 
-  // #swagger.tags = ['Books']
+  /* #swagger.tags = ['Books']*/
   validate.book, 
   controller.update
 );
 
 // DELETE a book
 router.delete('/:id', 
-  // #swagger.tags = ['Books']
+  /*#swagger.tags = ['Books']*/
   controller.remove
 );
 
