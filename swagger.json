@@ -5,7 +5,7 @@
     "description": "Users API",
     "version": "1.0.0"
   },
-  "host": "https://cse-w0304-project2.onrender.com",
+  "host": "cse-w0304-project2.onrender.com",
   "basePath": "/",
   "schemes": ["https"],
   "paths": {
